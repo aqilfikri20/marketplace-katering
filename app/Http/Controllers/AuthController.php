@@ -30,7 +30,13 @@ class AuthController extends Controller
         $data = $request->validate([
             'name' => 'required|string|max:100',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => [
+                'required',
+                'string',
+                'min:8',
+                'confirmed',
+                'regex:/^(?=.*\p{L})(?=.*\p{N})(?=.*[^\p{L}\p{N}\s]).+$/u',
+            ],
             'role' => 'required|in:merchant,customer',
             'company_name' => 'required|string|max:150',
             'phone' => 'required|string|max:30',
@@ -42,6 +48,9 @@ class AuthController extends Controller
             'captcha_answer.integer' => 'Jawaban CAPTCHA harus berupa angka.',
             'captcha_answer.min' => 'Jawaban CAPTCHA tidak sesuai.',
             'captcha_answer.max' => 'Jawaban CAPTCHA tidak sesuai.',
+            'password.min' => 'Kata sandi minimal 8 karakter.',
+            'password.regex' => 'Kata sandi harus mengandung huruf, angka, dan simbol.',
+            'password.confirmed' => 'Konfirmasi kata sandi tidak cocok.',
         ]);
 
         $expectedAnswer = $request->session()->pull('registration_captcha_answer');

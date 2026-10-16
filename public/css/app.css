@@ -559,3 +559,22 @@ body:has(.hero-catering).has-scrolled .topbar.navbar-returning .button-light:hov
     }
     .topbar .mobile-menu:focus-visible { outline: 2px solid #285ea8; outline-offset: 2px; }
 }
+.auth-form-wrap .password-hint {
+    display: block;
+    margin-top: -2px;
+    color: #718096;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+.role-emoji { display: grid; flex: 0 0 24px; place-items: center; color: #285ea8; }
+.role-emoji svg {
+    display: block;
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
