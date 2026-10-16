@@ -1,0 +1,15 @@
+/vendor
+/.env
+/.runtime
+/bootstrap/cache/*.php
+/storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/database/*.sqlite
+/public/storage
+/.env.docker
+/backups/
+/backup.sql
+/backup.sql.tmp

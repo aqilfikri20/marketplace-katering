@@ -1,0 +1,7 @@
+{
+    "The given data was invalid.": "Data yang dikirim belum valid.",
+    "Page Expired": "Sesi halaman sudah berakhir. Muat ulang halaman, lalu coba kembali.",
+    "Forbidden": "Anda tidak memiliki izin untuk mengakses halaman ini.",
+    "Not Found": "Halaman yang Anda cari tidak ditemukan.",
+    "Server Error": "Terjadi kendala pada server. Silakan coba kembali beberapa saat lagi."
+}
