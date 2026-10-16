@@ -14,7 +14,7 @@ Skrip tersebut membuat atau mengganti `backup.sql` di folder utama proyek. File 
 ### 1. Clone proyek pada VM tujuan dan siapkan konfigurasi Docker
 
 ```powershell
-git clone <URL-REPOSITORY> marketplace-katering
+git clone https://github.com/aqilfikri20/marketplace-katering
 cd marketplace-katering
 Copy-Item .env.docker.example .env.docker
 notepad .env.docker
