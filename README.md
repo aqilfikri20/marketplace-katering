@@ -22,10 +22,10 @@ Untuk penginstalan lebih cepat bisa melalui docker buka file `PANDUAN-DOCKER.md`
 
 ### Langkah Menjalankan di lokal 
 
-1. Clone repository. Ganti `<URL-REPOSITORY>` dengan URL repository GitHub proyek:
+1. Clone repository. 
 
    ```powershell
-   git clone <URL-REPOSITORY> marketplace-katering
+   git clone https://github.com/aqilfikri20/marketplace-katering
    cd marketplace-katering
    ```
 
